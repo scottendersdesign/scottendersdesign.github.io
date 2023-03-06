@@ -23,6 +23,7 @@ a {
 
 #projects {
   margin-left: clamp(4rem, 20vw, 48rem);
+  margin-right: clamp(4rem, 20vw, 48rem);
   position: relative;
   z-index: 2;
 }
