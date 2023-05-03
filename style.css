@@ -8,6 +8,10 @@
     padding: clamp(2rem, 0.5vw, 1rem) 0rem !important;
   }
 
+  #menu-items {
+    margin-top: 50%;
+  }
+  
   #contact {
     margin-top: clamp(4rem, 20vw, 48rem);
   }
