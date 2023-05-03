@@ -1,0 +1,202 @@
+@media only screen and (max-width: 800px) {
+  #menu-background-image {
+    background-position: 0% -40% !important;
+    background-repeat: no-repeat;
+  }
+
+  .menu-item {
+    padding: clamp(2rem, 0.5vw, 1rem) 0rem !important;
+  }
+
+  #contact {
+    margin-top: clamp(4rem, 20vw, 48rem);
+  }
+
+  #services {
+    font-size: larger !important;
+  }
+
+  li {
+    font-weight: bold;
+    margin: 45px 0 !important;
+  }
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* no underline */
+}
+
+#menu {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#menu-items {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+
+#portfolio {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+
+#contact {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  margin-right: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+
+#projects {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  margin-right: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+
+#services {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  margin-right: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
+}
+
+li {
+  margin: 10px 0;
+}
+
+#menu[data-active-index="0"] > #menu-background-pattern {
+  background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-background-pattern {
+  background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern {
+  background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern {
+  background-position: 0% -100%;
+}
+
+#menu[data-active-index="0"] > #menu-background-image {
+  background-position: center 45%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+  background-position: center 50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+  background-position: center 55%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+  background-position: center 60%;
+}
+
+#menu[data-active-index="4"] > #menu-background-image {
+  background-position: center 65%;
+}
+
+#menu-background-image {
+  background-image: url("images/SED Wallpaper.jpeg");
+  background-size: 100%;
+  background-position: center 45%;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100%;
+  z-index: 0;
+}
+
+#menu-items:hover ~ #menu-background-pattern {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+}
+
+#menu-items:hover ~ #menu-background-image {
+  background-size: 100vmax;
+  opacity: 0.1;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: clamp(3rem, 8vw, 8rem);
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  text-decoration: none;
+  transition: opacity 400ms ease;
+}
+
+.home-button {
+  position: top;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: clamp(3rem, 8vw, 8rem);
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  text-decoration: none;
+  transition: opacity 400ms ease;
+}
+
+div {
+  position: relative;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: clamp(1rem, 2vw, 3rem);
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  text-decoration: none;
+  transition: opacity 400ms ease;
+}
+
+img {
+  width: 35%;
+  height: auto;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: #2c2c2c;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
